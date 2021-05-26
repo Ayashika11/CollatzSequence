@@ -8,6 +8,10 @@ public class Main {
     int number;
     Scanner sc = new Scanner(System.in);
     number=sc.nextInt();
+    if(number<=0) {
+        System.out.println("Please enter a positive integer");
+        return;
+    }
     System.out.println(number);
     while(number!=1) {
         if(number%2==0)
